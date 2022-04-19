@@ -8,7 +8,7 @@ on:
 jobs:
   nama:
     name: Devsecops Test 1
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-16.04
     steps:
       - name: Check out the repo 
         uses: actions/checkout@v2
