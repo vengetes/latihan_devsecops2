@@ -6,12 +6,12 @@ on:
       - master
 
 jobs:
-  test_workflow:
+  nama:
     name: Devsecops Test 1
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo 
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
       - name: Perintah Linux
         run: |
