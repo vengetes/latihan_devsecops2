@@ -1,0 +1,20 @@
+name: Devsecops test workflows
+
+on: 
+  pull request:
+    branches:
+      - master
+
+jobs:
+  test_workflow:
+    name: Devsecops Test 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out that repo 
+      - uses: actions/checkout@v2
+
+      - name: Perintah Linux
+        run:
+          ls -lah
+          id
+          echo "hery wahyudi is here"
