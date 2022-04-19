@@ -15,6 +15,7 @@ jobs:
 
       - name: Perintah Linux
         run: |
+          git status
           ls -lah
           id
           echo "hery wahyudi is here"
