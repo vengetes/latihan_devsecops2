@@ -1,0 +1,21 @@
+name: Devsecops test CI/CD on master
+
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  Deploy:
+    name: Devsecops Deploy on Master
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo 
+        uses: actions/checkout@v2
+
+      - name: Perintah Linux
+        run: |
+          git status
+          ls -lah
+          id
+          echo "hery is deploying to prod"

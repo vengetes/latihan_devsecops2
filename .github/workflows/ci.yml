@@ -1,0 +1,21 @@
+name: Devsecops test workflows
+
+on: 
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  exampleGitAction:
+    name: Devsecops Test 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo 
+        uses: actions/checkout@v2
+
+      - name: Perintah Linux
+        run: |
+          git status
+          ls -lah
+          id
+          echo "hery wahyudi is here"
